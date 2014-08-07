@@ -25,7 +25,7 @@ par(mfrow=c(2,2))
 
 ##1st plot is the same as plot2.
         ##Define the plotting area. 
-        plot(x=dat$datetime,y=dat$Global_active_power,type="n",main=" ",xlab="",ylab="Global Active Power(kilowatts)")
+        plot(x=dat$datetime,y=dat$Global_active_power,type="n",main=" ",xlab="",ylab="Global Active Power")
         
         ##Insert lines between data points.
         lines(dat$datetime,dat$Global_active_power)
@@ -53,7 +53,7 @@ par(mfrow=c(2,2))
         lines(dat$datetime,dat$Sub_metering_3,col="blue")
         
         ##Add the legend in the top right.
-        legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=1)
+        legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=1,bty="n")
 
 ##4th plot is a Global_reactive_power/Datetime graph, quite similar to plot2.
         ##Define the plotting area. 
